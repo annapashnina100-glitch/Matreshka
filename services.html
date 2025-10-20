@@ -1,63 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Regions — Russian Cuisine</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Regions - Russian Cuisine</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <img src="images/matreshka.png" alt="logo" class="logo" />
-    <nav class="nav">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="services.html" class="nav-link active">Regions</a>
-      <a href="about.html" class="nav-link">About</a>
-    </nav>
+  <header>
+    <img src="матрешка.png" alt="Matreshka Logo">
+    <h1>Regions of Russian Cuisine</h1>
+    <p>Click a region to explore its most beloved dishes</p>
   </header>
 
-  <main>
-    <section class="regions-overview">
-      <h1>Regions & Popular Recipes</h1>
-      <p>Click a region to view 2–3 popular recipes from that area.</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Regions</a>
+    <a href="about.html">About</a>
+  </nav>
 
-      <div class="region-list">
-        <article class="region-card">
-          <img src="https://cdn.pixabay.com/photo/2017/09/10/18/17/moscow-2731187_1280.jpg" alt="Moscow">
-          <div class="region-body">
-            <h3>Moscow & Central Russia</h3>
-            <p>Hearty soups, baked goods and celebratory dishes.</p>
-            <a href="moscow.html" class="btn inline">Open region</a>
-          </div>
-        </article>
-
-        <article class="region-card">
-          <img src="https://cdn.pixabay.com/photo/2016/12/06/18/27/siberia-1880819_1280.jpg" alt="Siberia">
-          <div class="region-body">
-            <h3>Siberia</h3>
-            <p>Warm comfort dishes made for long winters: dumplings and preserved fish.</p>
-            <a href="siberia.html" class="btn inline">Open region</a>
-          </div>
-        </article>
-
-        <article class="region-card">
-          <img src="https://cdn.pixabay.com/photo/2016/11/29/10/07/barbecue-1867887_1280.jpg" alt="Caucasus">
-          <div class="region-body">
-            <h3>Southern Russia & Caucasus</h3>
-            <p>Grilled meats, herbs and bright flavors influenced by Caucasus cuisines.</p>
-            <a href="caucasus.html" class="btn inline">Open region</a>
-          </div>
-        </article>
+  <section>
+    <div class="recipes">
+      <div class="recipe">
+        <a href="moscow.html"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Borscht_served.jpg" alt="Moscow Cuisine"></a>
+        <h3><a href="moscow.html">Moscow & Central Russia</a></h3>
+        <p>Home of soups, salads, and comforting dishes.</p>
       </div>
-    </section>
-  </main>
+      <div class="recipe">
+        <a href="siberia.html"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Pelmeni_Russian_dumplings.jpg" alt="Siberian Cuisine"></a>
+        <h3><a href="siberia.html">Siberia</a></h3>
+        <p>Hearty food for the coldest climate.</p>
+      </div>
+      <div class="recipe">
+        <a href="south.html"><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Khachapuri_Adjaruli.jpg" alt="Southern Cuisine"></a>
+        <h3><a href="south.html">Southern Russia & Caucasus</a></h3>
+        <p>Spicy, vibrant, and full of flavor.</p>
+      </div>
+    </div>
+  </section>
 
-  <footer class="site-footer">
+  <footer>
     <p>&copy; 2025 Russian Cuisine</p>
   </footer>
-
-  <script src="scripts.js"></script>
 </body>
-</html>
-
 </html>
