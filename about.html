@@ -1,29 +1,154 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>About Russian Cuisine</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <img src="матрешка.png" alt="Matreshka Logo">
-    <h1>About Russian Cuisine</h1>
-  </header>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <title>About "Matreshka"</title> 
+  <link rel="stylesheet" href="style.css"> 
+  <style> 
+    body { 
+      font-family: "Segoe UI", sans-serif; 
+      background: linear-gradient(120deg, #ffffff, #fceaea); 
+      color: #2d2d2d; 
+      margin: 0; 
+      text-align: center; 
+      line-height: 1.6; 
+    }
 
+    header {
+      background: linear-gradient(135deg, #e63946, #e86f6f);
+      color: white;
+      padding: 30px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      font-style: italic;
+      margin-top: 5px;
+    }
+
+    .content {
+      padding: 40px 20px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .content h2 {
+      color: #e63946;
+      font-size: 1.8rem;
+    }
+
+    .matreshka {
+      width: 140px;
+      height: 200px;
+      margin: 50px auto 20px;
+      background: linear-gradient(to bottom, #e63946 0%, #e63946 45%, #ffffff 45%, #ffffff 60%, #0052b4 60%, #0052b4 80%, #e63946 80%, #e63946 100%);
+      border-radius: 70px 70px 60px 60px;
+      position: relative;
+      animation: sway 3s ease-in-out infinite;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+
+    
+
+    .eyes {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+    }
+
+    .blush {
+      position: absolute;
+      top: 26px;
+      width: 20px;
+      height: 18px;
+      background: #ff587c94;
+      border-radius: 50%;
+    }
+
+    .blush.left {
+      left: 0px;
+    }
+
+    .blush.right {
+      right: 0px;
+    }
+
+    .smile {
+      width: 25px;
+      height: 12px;
+      border-bottom: 2px solid #000;
+      border-radius: 0 0 50% 50%;
+      margin: 8px auto 0;
+    }
+
+    @keyframes sway {
+      0% { transform: rotate(-3deg); }
+      50% { transform: rotate(3deg); }
+      100% { transform: rotate(-3deg); }
+    }
+
+    .love-text {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #e63946;
+      font-weight: bold;
+      line-height: 1.8;
+    }
+
+    .flag {
+      font-size: 1.3rem;
+    }
+
+    footer {
+      background: #fff;
+      color: #e63946;
+      padding: 15px;
+      border-top: 2px solid #f2d1d1;
+    }
+  </style> 
+</head> 
+
+<body> 
+  <header> 
+    <h1>About "Matreshka"</h1> 
+    <p>Click on a dish to view its recipe</p> 
+  </header> 
+  
   <nav>
     <a href="index.html">Home</a>
     <a href="services.html">Regions</a>
     <a href="about.html">About</a>
   </nav>
 
-  <section>
-    <h2>About the Project</h2>
-    <p>This website celebrates the unique and diverse culinary traditions of Russia. Each region offers its own flavor, inspired by local ingredients, history, and climate. From Siberia’s hearty meals to the Caucasus’s spicy delicacies — Russian cuisine is a true reflection of the country’s soul.</p>
-  </section>
+  <section class="content"> 
+    <h2>About "Matreshka"</h2> 
+    <p> "Matreshka" is more than just a collection of recipes — it's a celebration of the warmth, generosity, and soul of Russian cuisine. Each dish tells a story: cozy winter evenings, family laughter, and the aroma of freshly baked bread. Our goal is to bring you closer to the heart of Russia through its flavors. </p>
+    
+    <div class="matreshka">
+      <div class="face">
+        <div class="eyes">
+          <div class="eye"></div>
+          <div class="eye"></div>
+        </div>
+        <div class="blush left"></div>
+        <div class="blush right"></div>
+        <div class="smile"></div>
+      </div>
+    </div>
 
-  <footer>
-    <p>&copy; 2025 Russian Cuisine | Designed with ❤️</p>
-  </footer>
-</body>
+    <div class="love-text">
+      With love from Russia <span class="flag">🇷🇺</span><br>
+      С любовью из России <span class="flag">🇷🇺</span>
+    </div>
+  </section> 
+  
+  <footer> 
+    <p>&copy; 2025 Matreshka — Russian Cuisine</p> 
+  </footer> 
+</body> 
 </html>

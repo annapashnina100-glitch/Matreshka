@@ -2,14 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Russian Cuisine</title>
+  <title>Russian Cuisine - Traditional Dishes</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #fafafa;
+    }
+    header {
+      text-align: center;
+      background: #c62828;
+      color: white;
+      padding: 20px;
+    }
+    nav {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .recipes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .recipe {
+      width: 250px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .recipe:hover {
+      transform: scale(1.05);
+    }
+    .recipe img {
+      width: 100%;
+      border-radius: 12px 12px 0 0;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #f4f4f4;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="матрешка.png" alt="Matreshka Logo">
-    <h1>Russian Cuisine</h1>
-    <p>Explore the most iconic dishes from all across Russia</p>
+    <img src="матрешка.png" alt="Matreshka Logo" style="width:80px;">
+    <h1>Famous Dishes of Russian Cuisine</h1>
+    <p>Click on a dish to view its recipe</p>
   </header>
 
   <nav>
@@ -19,12 +71,58 @@
   </nav>
 
   <section>
-    <h2>Welcome to Russian Cuisine</h2>
-    <p>Discover the diversity of Russian gastronomy — from hearty Siberian pelmeni to bright Moscow borscht and warm Caucasian khachapuri. Click on a region to explore its flavors and recipes.</p>
-  </section>
+    <div class="recipes">
 
+      <div class="recipe">
+        <a href="borsch.html"><img src="images/borsch.png" alt="Borsch"></a>
+        <h3><a href="borsch.html">Borsch</a></h3>
+      </div>
+
+      <div class="recipe">
+        <a href="okroshka.html"><img src="images/okroshka.png" alt="Okroshka"></a>
+        <h3><a href="okroshka.html">Okroshka</a></h3>
+      </div>
+
+      <div class="recipe">
+        <a href="olivier.html"><img src="images/olivier.png" alt="Olivier"></a>
+        <h3><a href="olivier.html">Olivier Salad</a></h3>
+      </div>
+
+      <div class="recipe">
+        <a href="pelmeni.html"><img src="images/pelmeni.png" alt="Pelmeni"></a>
+        <h3><a href="pelmeni.html">Pelmeni</a></h3>
+      </div>
+
+      <div class="recipe">
+        <a href="rassolnik.html"><img src="images/rassolnik.png" alt="Rassolnik"></a>
+        <h3><a href="rassolnik.html">Rassolnik</a></h3>
+      </div>
+
+      <div class="recipe">
+        <a href="fried_potatoes.html"><img src="images/fried_potatoes.png" alt="Fried Potatoes"></a>
+        <h3><a href="fried_potatoes.html">Fried Potatoes</a></h3>
+      </div>
+
+      <div class="recipe">
+        <a href="chicken_kyiv.html"><img src="images/chicken_kyiv.png" alt="Chicken Kiev"></a>
+        <h3><a href="chicken_kyiv.html">Chicken Kiev</a></h3>
+      </div>
+
+      <div class="recipe">
+        <a href="khachapuri.html"><img src="images/khachapuri.png" alt="Khachapuri"></a>
+        <h3><a href="khachapuri.html">Khachapuri</a></h3>
+      </div>
+
+      <div class="recipe">
+        <a href="shuba.html"><img src="images/shuba.png" alt="Herring Under a Fur Coat"></a>
+        <h3><a href="shuba.html">Herring Under a Fur Coat</a></h3>
+      </div>
+       
+    </div>
+  </section>
   <footer>
-    <p>&copy; 2025 Russian Cuisine | Made with ❤️ in Russia</p>
+    <p>&copy; 2025 Russian Cuisine</p>
   </footer>
 </body>
 </html>
+
